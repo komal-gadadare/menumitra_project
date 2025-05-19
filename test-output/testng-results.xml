@@ -2,23 +2,23 @@
 <testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3803" started-at="2025-05-10T08:51:06Z" finished-at="2025-05-10T08:51:10Z">
+  <suite name="Default suite" duration-ms="3489" started-at="2025-05-19T07:26:20Z" finished-at="2025-05-19T07:26:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3803" started-at="2025-05-10T08:51:06Z" finished-at="2025-05-10T08:51:10Z">
+    <test name="Default test" duration-ms="3489" started-at="2025-05-19T07:26:20Z" finished-at="2025-05-19T07:26:24Z">
       <class name="com.menumitraPosAPITestScript.PosDetailsTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="setUp" is-config="true" duration-ms="16" started-at="2025-05-10T14:21:06Z" finished-at="2025-05-10T14:21:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="setUp" is-config="true" duration-ms="16" started-at="2025-05-19T12:56:20Z" finished-at="2025-05-19T12:56:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="posDetailsSetUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsSetUp" is-config="true" duration-ms="0" started-at="2025-05-10T14:21:07Z" finished-at="2025-05-10T14:21:07Z">
+        <test-method status="FAIL" signature="posDetailsSetUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsSetUp" is-config="true" duration-ms="0" started-at="2025-05-19T12:56:20Z" finished-at="2025-05-19T12:56:20Z">
           <exception class="com.menumitra.utilityclass.customException">
             <message>
               <![CDATA[Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null]]>
             </message>
             <full-stacktrace>
               <![CDATA[com.menumitra.utilityclass.customException: Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null
-	at com.menumitraPosAPITestScript.PosDetailsTestScript.posDetailsSetUp(PosDetailsTestScript.java:91)
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.posDetailsSetUp(PosDetailsTestScript.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posDetailsSetUp -->
-        <test-method status="SKIP" signature="posDetailsNegativeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsNegativeTest" duration-ms="0" started-at="2025-05-10T14:21:10Z" data-provider="getPosDetailsNegativeData" finished-at="2025-05-10T14:21:10Z">
+        <test-method status="SKIP" signature="posDetailsNegativeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsNegativeTest" duration-ms="0" started-at="2025-05-19T12:56:23Z" data-provider="getPosDetailsNegativeData" finished-at="2025-05-19T12:56:23Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering]]>
@@ -78,7 +78,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 Caused by: com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
-	at com.menumitraPosAPITestScript.PosDetailsTestScript.getPosDetailsNegativeData(PosDetailsTestScript.java:275)
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.getPosDetailsNegativeData(PosDetailsTestScript.java:280)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -92,7 +92,7 @@ Caused by: com.menumitra.utilityclass.customException: Error in getting POS Deta
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posDetailsNegativeTest -->
-        <test-method status="SKIP" signature="posDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsTest" duration-ms="0" started-at="2025-05-10T14:21:10Z" data-provider="getPosDetailsData" finished-at="2025-05-10T14:21:10Z">
+        <test-method status="SKIP" signature="posDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsTest" duration-ms="0" started-at="2025-05-19T12:56:24Z" data-provider="getPosDetailsData" finished-at="2025-05-19T12:56:24Z">
           <params>
             <param index="0">
               <value>

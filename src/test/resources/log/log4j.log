@@ -105,3 +105,56 @@
 2025-05-10 14:21:10 INFO  Listener:60 - posDetailsTest test case started!
 2025-05-10 14:21:10 WARN  Listener:65 - Test case skipped: posDetailsTest
 2025-05-10 14:21:10 INFO  Listener:60 - Test Suite finished: Default test
+2025-05-19 12:56:20 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon May 19 12:56:20 IST 2025) =====
+2025-05-19 12:56:20 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-05-19 12:56:20 INFO  APIBase:60 - Starting test suite setup
+2025-05-19 12:56:20 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-05-19 12:56:20 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-05-19 12:56:20 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-05-19 12:56:20 INFO  ReadFile:60 - Successfully opened file stream
+2025-05-19 12:56:20 INFO  APIBase:60 - Properties file opened successfully
+2025-05-19 12:56:20 INFO  APIBase:60 - Properties object initialized
+2025-05-19 12:56:20 INFO  APIBase:60 - Properties loaded successfully
+2025-05-19 12:56:20 INFO  APIBase:60 - Properties file loaded successfully
+2025-05-19 12:56:20 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-05-19 12:56:20 INFO  APIBase:60 - Setting QA environment...
+2025-05-19 12:56:20 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-05-19 12:56:20 INFO  Listener:60 - Test Suite started: Default test
+2025-05-19 12:56:20 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-05-19 12:56:20 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-05-19 12:56:20 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-05-19 12:56:20 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-05-19 12:56:20 INFO  ResponseUtil:60 - Executing POST request
+2025-05-19 12:56:22 INFO  ResponseUtil:60 - POST request completed successfully
+2025-05-19 12:56:22 INFO  ActionsMethods:60 - POST request executed for login API
+2025-05-19 12:56:22 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-05-19 12:56:22 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-05-19 12:56:22 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-05-19 12:56:22 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-05-19 12:56:22 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-05-19 12:56:22 INFO  ResponseUtil:60 - Executing POST request
+2025-05-19 12:56:22 INFO  ResponseUtil:60 - POST request completed successfully
+2025-05-19 12:56:22 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-05-19 12:56:22 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel file closed successfully.
+2025-05-19 12:56:23 ERROR PosDetailsTestScript:70 - Error while reading POS Details API endpoint data from Excel sheet: null
+2025-05-19 12:56:23 ERROR PosDetailsTestScript:70 - Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel file closed successfully.
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel data read successfully.
+2025-05-19 12:56:23 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-05-19 12:56:23 ERROR PosDetailsTestScript:99 - [FAILURE] No valid POS Details negative test data found after filtering
+2025-05-19 12:56:23 ERROR PosDetailsTestScript:99 - [FAILURE] Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
+2025-05-19 12:56:23 WARN  Listener:65 - Test case skipped: posDetailsNegativeTest
+2025-05-19 12:56:24 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-05-19 12:56:24 INFO  DataDriven:60 - Excel file closed successfully.
+2025-05-19 12:56:24 INFO  DataDriven:60 - Excel data read successfully.
+2025-05-19 12:56:24 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-05-19 12:56:24 INFO  Listener:60 - posDetailsTest test case started!
+2025-05-19 12:56:24 WARN  Listener:65 - Test case skipped: posDetailsTest
+2025-05-19 12:56:24 INFO  Listener:60 - Test Suite finished: Default test
