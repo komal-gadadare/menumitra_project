@@ -1,17 +1,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">5,064</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.menumitratCommonAPITestScript.HotelDataTestScript</td><td><a href="#m0">hotelDataNegativeTest</a></td><td rowspan="2">1746785932190</td><td rowspan="2">157</td></tr><tr class="failedeven"><td><a href="#m1">hotelDataNegativeTest</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.HotelDataTestScript</td><td><a href="#m2">getHotelData</a></td><td rowspan="1">1746785931630</td><td rowspan="1">256</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.menumitratCommonAPITestScript.HotelDataTestScript#hotelDataNegativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>gethoteldata</td><td>gethoteldata_003</td><td>negative</td><td>Verify Get Outlet Data using Invalid input (outlet_id)</td><td>post</td><td>{
-    &quot;user_id&quot;:&quot;2&quot;,
-    &quot;outlet_id&quot;:&quot;@#&quot;
-}</td><td>{&quot;detail&quot;:&quot;User ID must be a number.&quot;}</td><td>400</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404
-	at com.menumitratCommonAPITestScript.HotelDataTestScript.hotelDataNegativeTest(HotelDataTestScript.java:368)
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">3,803</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.menumitraPosAPITestScript.PosDetailsTestScript</td><td><a href="#m0">posDetailsSetUp</a></td><td rowspan="1">1746867067096</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.menumitraPosAPITestScript.PosDetailsTestScript</td><td><a href="#m1">posDetailsNegativeTest</a></td><td rowspan="1">1746867070656</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">posDetailsTest</a></td><td rowspan="1">1746867070759</td><td rowspan="1">0</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.menumitraPosAPITestScript.PosDetailsTestScript#posDetailsSetUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.menumitra.utilityclass.customException: Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.posDetailsSetUp(PosDetailsTestScript.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.menumitraPosAPITestScript.PosDetailsTestScript#posDetailsNegativeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
@@ -25,47 +44,57 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.menumitratCommonAPITestScript.HotelDataTestScript#hotelDataNegativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>gethoteldata</td><td>gethoteldata_002</td><td>negative</td><td>Verify Get Outlet Data using Invalid input</td><td>post</td><td>{
-    &quot;user_id&quot;:&quot;@#&quot;,
-    &quot;outlet_id&quot;:&quot;1&quot;
-}</td><td>{&quot;detail&quot;:&quot;User ID must be a number.&quot;}</td><td>400</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404
-	at com.menumitratCommonAPITestScript.HotelDataTestScript.hotelDataNegativeTest(HotelDataTestScript.java:368)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.getPosDetailsNegativeData(PosDetailsTestScript.java:275)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.menumitratCommonAPITestScript.HotelDataTestScript#getHotelData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>gethoteldata</td><td>gethoteldata_001</td><td>positive</td><td>Verify Get Outlet Data using valid input</td><td>post</td><td>{
-    &quot;user_id&quot;:&quot;2&quot;,
-    &quot;outlet_id&quot;:&quot;1&quot;
-}</td><td>{
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.menumitraPosAPITestScript.PosDetailsTestScript#posDetailsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>pos_details</td><td>pos_details_001</td><td>positive</td><td>valid verify</td><td>get</td><td>null</td><td>{
     &quot;data&quot;: {
-        &quot;today_paid_orders&quot;: 0,
-        &quot;active_orders&quot;: 0,
-        &quot;today_total_revenue&quot;: 0,
-        &quot;total_occupied_table_count&quot;: 0,
-        &quot;total_available_tables&quot;: 15
+        &quot;owner_data&quot;: {
+            &quot;owner_name&quot;: &quot;Heena&quot;,
+            &quot;user_id&quot;: 3,
+            &quot;role&quot;: &quot;manager&quot;,
+            &quot;outlet_name&quot;: &quot;Bhavani hotel&quot;,
+            &quot;outlet_id&quot;: 1,
+            &quot;outlet_mobile&quot;: &quot;6767679760&quot;,
+            &quot;outlet_status&quot;: true,
+            &quot;order_number_sequence&quot;: &quot;since_opening&quot;,
+            &quot;gst&quot;: &quot;1&quot;,
+            &quot;service_charges&quot;: &quot;1&quot;,
+            &quot;outlet_upi&quot;: &quot;dd@ok&quot;,
+            &quot;image&quot;: null,
+            &quot;is_open&quot;: true,
+            &quot;completed_orders&quot;: 0,
+            &quot;active_orders&quot;: 0,
+            &quot;today_total_revenue&quot;: 0,
+            &quot;outlet_address&quot;: &quot;satara, maharashtra&quot;
+        },
+        &quot;outlet_settings&quot;: {
+            &quot;style&quot;: &quot;blue&quot;,
+            &quot;has_dine_in&quot;: true,
+            &quot;has_parcel&quot;: true,
+            &quot;has_counter&quot;: false,
+            &quot;has_delivery&quot;: false,
+            &quot;has_drive_through&quot;: false,
+            &quot;print_and_save&quot;: true,
+            &quot;KOT_and_save&quot;: true,
+            &quot;settle&quot;: true,
+            &quot;reserve_table&quot;: true,
+            &quot;cancel&quot;: true,
+            &quot;POS_show_menu_image&quot;: true
+        },
+        &quot;user_settings&quot;: {
+            &quot;language&quot;: null,
+            &quot;theme&quot;: null,
+            &quot;font_size&quot;: null
+        }
     }
 }</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

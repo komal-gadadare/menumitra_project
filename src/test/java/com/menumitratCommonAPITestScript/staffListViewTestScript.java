@@ -34,7 +34,7 @@ import com.menumitra.utilityclass.validateResponseBody;
 import io.restassured.response.Response;
 
 @Listeners(Listener.class)
-public class StaffListViewTestScript extends APIBase
+public class staffListViewTestScript extends APIBase
 {
     private JSONObject requestBodyJson;
     private Response response;
@@ -44,7 +44,7 @@ public class StaffListViewTestScript extends APIBase
     private URL url;
     private JSONObject expectedResponseJson;
     private JSONObject actualJsonBody;
-    Logger logger = LogUtils.getLogger(StaffListViewTestScript.class);
+    Logger logger = LogUtils.getLogger(staffListViewTestScript.class);
    
     @BeforeClass
     private void staffListViewSetUp() throws customException

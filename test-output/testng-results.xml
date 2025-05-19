@@ -1,30 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5064" started-at="2025-05-09T10:18:47Z" finished-at="2025-05-09T10:18:52Z">
+  <suite name="Default suite" duration-ms="3803" started-at="2025-05-10T08:51:06Z" finished-at="2025-05-10T08:51:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5064" started-at="2025-05-09T10:18:47Z" finished-at="2025-05-09T10:18:52Z">
-      <class name="com.menumitratCommonAPITestScript.HotelDataTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.menumitratCommonAPITestScript.HotelDataTestScript@7d9d1a19]" name="setUp" is-config="true" duration-ms="24" started-at="2025-05-09T15:48:47Z" finished-at="2025-05-09T15:48:47Z">
+    <test name="Default test" duration-ms="3803" started-at="2025-05-10T08:51:06Z" finished-at="2025-05-10T08:51:10Z">
+      <class name="com.menumitraPosAPITestScript.PosDetailsTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="setUp" is-config="true" duration-ms="16" started-at="2025-05-10T14:21:06Z" finished-at="2025-05-10T14:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.HotelDataTestScript@7d9d1a19]" name="setup" is-config="true" duration-ms="3885" started-at="2025-05-09T15:48:47Z" finished-at="2025-05-09T15:48:51Z">
+        <test-method status="FAIL" signature="posDetailsSetUp()[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsSetUp" is-config="true" duration-ms="0" started-at="2025-05-10T14:21:07Z" finished-at="2025-05-10T14:21:07Z">
+          <exception class="com.menumitra.utilityclass.customException">
+            <message>
+              <![CDATA[Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.menumitra.utilityclass.customException: Error in POS Details setup: Error while reading POS Details API endpoint data from Excel sheet: null
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.posDetailsSetUp(PosDetailsTestScript.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.menumitra.utilityclass.customException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getHotelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.HotelDataTestScript@7d9d1a19]" name="getHotelData" duration-ms="256" started-at="2025-05-09T15:48:51Z" data-provider="getHotelDataTestData" finished-at="2025-05-09T15:48:51Z">
+        </test-method> <!-- posDetailsSetUp -->
+        <test-method status="SKIP" signature="posDetailsNegativeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsNegativeTest" duration-ms="0" started-at="2025-05-10T14:21:10Z" data-provider="getPosDetailsNegativeData" finished-at="2025-05-10T14:21:10Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: com.menumitra.utilityclass.customException: Error in getting POS Details negative test data: No valid POS Details negative test data found after filtering
+	at com.menumitraPosAPITestScript.PosDetailsTestScript.getPosDetailsNegativeData(PosDetailsTestScript.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- posDetailsNegativeTest -->
+        <test-method status="SKIP" signature="posDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitraPosAPITestScript.PosDetailsTestScript@57e1b0c]" name="posDetailsTest" duration-ms="0" started-at="2025-05-10T14:21:10Z" data-provider="getPosDetailsData" finished-at="2025-05-10T14:21:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[gethoteldata]]>
+                <![CDATA[pos_details]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[gethoteldata_001]]>
+                <![CDATA[pos_details_001]]>
               </value>
             </param>
             <param index="2">
@@ -34,31 +111,59 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Verify Get Outlet Data using valid input]]>
+                <![CDATA[valid verify]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[post]]>
+                <![CDATA[get]]>
               </value>
             </param>
             <param index="5">
-              <value>
-                <![CDATA[{
-    "user_id":"2",
-    "outlet_id":"1"
-}]]>
-              </value>
+              <value is-null="true"/>
             </param>
             <param index="6">
               <value>
                 <![CDATA[{
     "data": {
-        "today_paid_orders": 0,
-        "active_orders": 0,
-        "today_total_revenue": 0,
-        "total_occupied_table_count": 0,
-        "total_available_tables": 15
+        "owner_data": {
+            "owner_name": "Heena",
+            "user_id": 3,
+            "role": "manager",
+            "outlet_name": "Bhavani hotel",
+            "outlet_id": 1,
+            "outlet_mobile": "6767679760",
+            "outlet_status": true,
+            "order_number_sequence": "since_opening",
+            "gst": "1",
+            "service_charges": "1",
+            "outlet_upi": "dd@ok",
+            "image": null,
+            "is_open": true,
+            "completed_orders": 0,
+            "active_orders": 0,
+            "today_total_revenue": 0,
+            "outlet_address": "satara, maharashtra"
+        },
+        "outlet_settings": {
+            "style": "blue",
+            "has_dine_in": true,
+            "has_parcel": true,
+            "has_counter": false,
+            "has_delivery": false,
+            "has_drive_through": false,
+            "print_and_save": true,
+            "KOT_and_save": true,
+            "settle": true,
+            "reserve_table": true,
+            "cancel": true,
+            "POS_show_menu_image": true
+        },
+        "user_settings": {
+            "language": null,
+            "theme": null,
+            "font_size": null
+        }
     }
 }]]>
               </value>
@@ -71,174 +176,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getHotelData -->
-        <test-method status="FAIL" signature="hotelDataNegativeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.HotelDataTestScript@7d9d1a19]" name="hotelDataNegativeTest" duration-ms="165" started-at="2025-05-09T15:48:52Z" data-provider="getHotelDataNegativeTestData" finished-at="2025-05-09T15:48:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gethoteldata]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[gethoteldata_002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[negative]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Verify Get Outlet Data using Invalid input]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[post]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{
-    "user_id":"@#",
-    "outlet_id":"1"
-}]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[{"detail":"User ID must be a number."}]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-          </params>
-          <exception class="com.menumitra.utilityclass.customException">
-            <message>
-              <![CDATA[Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.menumitra.utilityclass.customException: Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404
-	at com.menumitratCommonAPITestScript.HotelDataTestScript.hotelDataNegativeTest(HotelDataTestScript.java:368)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.menumitra.utilityclass.customException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hotelDataNegativeTest -->
-        <test-method status="FAIL" signature="hotelDataNegativeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.HotelDataTestScript@7d9d1a19]" name="hotelDataNegativeTest" duration-ms="157" started-at="2025-05-09T15:48:52Z" data-provider="getHotelDataNegativeTestData" finished-at="2025-05-09T15:48:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gethoteldata]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[gethoteldata_003]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[negative]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Verify Get Outlet Data using Invalid input (outlet_id)]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[post]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{
-    "user_id":"2",
-    "outlet_id":"@#"
-}]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[{"detail":"User ID must be a number."}]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-          </params>
-          <exception class="com.menumitra.utilityclass.customException">
-            <message>
-              <![CDATA[Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.menumitra.utilityclass.customException: Error in hotel data negative test: Status code validation failed - Expected: 400, Actual: 404
-	at com.menumitratCommonAPITestScript.HotelDataTestScript.hotelDataNegativeTest(HotelDataTestScript.java:368)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.menumitra.utilityclass.customException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hotelDataNegativeTest -->
-      </class> <!-- com.menumitratCommonAPITestScript.HotelDataTestScript -->
+        </test-method> <!-- posDetailsTest -->
+      </class> <!-- com.menumitraPosAPITestScript.PosDetailsTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
